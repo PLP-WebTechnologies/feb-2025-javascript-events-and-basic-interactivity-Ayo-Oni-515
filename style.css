@@ -1,1 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.3em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.grid-container {
+    display: grid;
+}
+
+nav, main {
+    grid-column: 1 / -1;
+}
+
+nav {
+    padding: 1.5rem;
+    background-color: rgb(247, 105, 53);
+    color: white;
+    font-weight: bolder;
+}
+
+.nav {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-container ul {
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.nav-items {
+    gap: 0.75em;
+}
+
+main {
+    background-color: antiquewhite;
+}
+
+.event-handling {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.event-handling button {
+    padding: 1rem;
+    width: 30%;
+    color: white;
+    background-color: rgb(19, 184, 168);
+    border: none;
+    border-radius: 0.3rem;
+    transition: background-color 0.2s ease-in-out, font-weight 0.1s ease-in;
+}
+
+.event-handling button:hover {
+    font-weight: bold;
+    background-color: rgb(14, 251, 172);
+}
+
+.interactive-elements {
+    align-items: center;
+    gap: 1rem;
+}
 
